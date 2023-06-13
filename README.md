@@ -1,2 +1,2 @@
 # Veebees01.github.io
-CIS133 Teaching Course
+CIS133 Teaching Website
