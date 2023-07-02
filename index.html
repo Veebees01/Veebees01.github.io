@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Training Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1  id="title">Pet Training Survey </h1>
+  <p id="description">Thank you for taking the time to fill out.</p>
+  <form action="" id="survey-form">
+    <label id="name-label" for="name">Name</label> 
+    <input type="text" id="name" placeholder="Provide your pet name" required >
+    <label id="email-label" for="email">Email</label> 
+      <input id="email" type="email" placeholder="Input your email" required>
+     <fieldset>
+      <legend>Do you have pets?</legend>
+          <input type="radio" name="pets" id="yes" value="Yes">
+ <label for="yes">Yes</label>
+    <input type="radio" name="pets" id="No" value="No">
+    <label for="No">No</label>
+  </fieldset>
+  <fieldset>
+      <legend>How many?</legend>
+      <select name="dropdown" id="dropdown">
+        <option value="one">one</option>
+        <option value="Two">two</option> 
+        <option value="Three +">Three+</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Age of pet or pet(s)? </legend>
+  <label id="number-label" for="number" >Age</label> 
+  <input type="number" id="number"  min="10" max="100" placeholder="Input your email">
+    </fieldset>
+    <fieldset>
+    <legend>Type of pets you have if you selected yes</legend>
+    <input type="checkbox" name="type-of-pet" id="dog" value="dog">
+    <label for="dog">Dog</label>
+    <input type="checkbox" name="type-of-pet" id="cat" value="cat">
+    <label for="cat">Cat</label>
+    <input type="checkbox" name="type-of-pet" id="bird" value="bird">
+    <label for="bird">Bird</label>
+    <input type="checkbox" name="type-of-pet" id="hamster" value="hamster">
+    <label for="hamster">Hamster</label>
+    <input type="checkbox" name="type-of-pet" id="other" value="other">
+    <label for="other">Other</label>
+  </fieldset>   
+    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Tell us any concerns about your pets"></textarea> 
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
